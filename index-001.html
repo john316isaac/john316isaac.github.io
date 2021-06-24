@@ -6,68 +6,40 @@
 
 <style>
 
-#mySidenav a {
-  position: absolute;
-  left: -80px;
-  transition: 0.3s;
-  padding: 10px;
-  width: 100px;
-  text-decoration: none;
-  font-size: 12px;
-  color: white;
-  border-radius: 0 5px 5px 0;
+
+.accordion {
+  background-color: #8FBC8F;
+  color: #F8F8FF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  opacity: 0.65;
 }
 
-#mySidenav a:hover {
-  left: 0;
+.active, .accordion:hover {
+  background-color: #006600; 
+  opacity: 0.65;
+
 }
 
-#about {
-  top: 110px;
-  background-color: #006400;
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+ opacity: 0.75;
 }
 
-#mission {
-  top: 150px;
-  background-color: #228B22;
-}
-
-#vission {
-  top: 190px;
-  background-color: #3CB371;
-}
-
-#core {
-  top: 230px;
-  background-color: #32CD32;
-}
-
-
-
-#declare {
-  top: 270px;
-  background-color: #00008B;
-}
-
-#values {
-  top: 310px;
-  background-color: #483D8B;
-}
-
-#faith {
-  top: 350px;
-  background-color: #2196F3;
-}
-
-#Sample4 {
-  top: 390px;
-  background-color: #ADD8E6;
-}
 
 h1 {
   text-align: center;
   padding: 10px;
-  background-color: #00008B;
+  background-color: #8FBC8F;
   text-transform: uppercase;
   color:  #F8F8FF
 }
@@ -80,38 +52,419 @@ body {
   background-size: 100% 100%;
 
 }
-</style>
 
+
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 12.5px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 12.5px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+
+
+#myInputi {
+
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 12.5px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myULi {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myULi li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 12.5px;
+  color: black;
+  display: block
+}
+
+#myULi li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+
+#myInputiBK {
+
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 12.5px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myULiBK {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myULiBK li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 12.5px;
+  color: black;
+  display: block
+}
+
+#myULiBK li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+
+
+</style>
 
 <body>
 
 <header>
 
-
 </header>
 
 <div>
   <h1>Jesus Is Lord Church Cainta Library</h1>
-  <hr>
 </div>
+<hr>
 
-<div id="mySidenav" class="sidenav">
-  <a href="#" id="about">About</a>
-  <a href="https://docs.google.com/document/d/e/2PACX-1vSXpvLLHzDDAOghTmrCciPJaDRyqZH1or_wncW3wbJMdgCVh645ciQwUHTQCZpayg/pub?embedded=true" target="iframe_a" id="mission">Mission</a>
-  <a href="https://docs.google.com/document/d/e/2PACX-1vRSR2xDxPJKkSR1ZrlbjbikjGDoApKWM8zwB6gDQbINCHWG16nitvuWoe1aqXmF9w/pub?embedded=true" target="iframe_a" id="vission">Vision</a>
-  <a href="https://docs.google.com/document/d/e/2PACX-1vS3BpWfo_GkkqC4MWwaUIuSZHIahQvlPpYWM9kWWw9t9g-L_L9mrhJRrKwQVmRJxg/pub?embedded=true" target="iframe_a" id="core">Core Values</a>
-  <a href="https://docs.google.com/document/d/e/2PACX-1vQlO7OGIUshm2byVg7BTXbuMK40zrnmhVdz7agC9_c1pHLgJpKjRTIqxP-pEDaZfQ/pub?embedded=true" target="iframe_a" id="declare">JIL Church </a>
-  <a href="https://docs.google.com/document/d/e/2PACX-1vRfDHceOy0-kaCYLAk3jSo_W1ss4kkavumnJp8cJeA6IV1wXwBYHVgWZ7D9mKJK3Q/pub?embedded=true" target="iframe_a" id="values">Values</a>
-  <a href="https://docs.google.com/document/d/e/2PACX-1vQ-pbRtOAToeE7TnUWCYdMya0zdDOobDBsfgQzb2mwXKC4niNoDMLjrFQe1VHcnzw/pub?embedded=true" target="iframe_a" id="faith">Faith</a>
-  <a href="#" id="Sample4">Sample4</a>
-</div>
 
-<div style="margin-left:40px;">
-  <iframe name="iframe_a" width="100%" height="485"></iframe>
-  <p>Scroll down for the list of teaching.  </p>
+<button class="accordion">About This Web Page</button>
+<div class="panel">
+
+
 
 </div>
-   
+<hr>
+</div>
+
+<button class="accordion">Mission</button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vSXpvLLHzDDAOghTmrCciPJaDRyqZH1or_wncW3wbJMdgCVh645ciQwUHTQCZpayg/pub?embedded=true" width="100%" height="485" title="Iframe Example2"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+<button class="accordion">Vision</button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vRSR2xDxPJKkSR1ZrlbjbikjGDoApKWM8zwB6gDQbINCHWG16nitvuWoe1aqXmF9w/pub?embedded=true" width="100%" height="485" title="Iframe Example3"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+<button class="accordion">Core Values</button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vS3BpWfo_GkkqC4MWwaUIuSZHIahQvlPpYWM9kWWw9t9g-L_L9mrhJRrKwQVmRJxg/pub?embedded=true" width="100%" height="485" title="Iframe Example4"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+<button class="accordion">Declaration of the JIL Church Worldwide Distinctives</button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQlO7OGIUshm2byVg7BTXbuMK40zrnmhVdz7agC9_c1pHLgJpKjRTIqxP-pEDaZfQ/pub?embedded=true" width="100%" height="485" title="Iframe Example5"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+<button class="accordion">Declaration of Principles and Values</button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vRfDHceOy0-kaCYLAk3jSo_W1ss4kkavumnJp8cJeA6IV1wXwBYHVgWZ7D9mKJK3Q/pub?embedded=true" width="100%" height="485" title="Iframe Example6"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+<button class="accordion">Declaration of Faith</button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQ-pbRtOAToeE7TnUWCYdMya0zdDOobDBsfgQzb2mwXKC4niNoDMLjrFQe1VHcnzw/pub?embedded=true" width="100%" height="485" title="Iframe Example7"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+
+<hr>
+<button class="accordion">Jesus Is Lord Church Teaching</button>
+<div class="panel">
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Jesus Is Lord Church Teaching" title="Type in a teaching">
+<ul id="myUL">
+
+  <li><a href="#">Teaching 1</a></li>
+  <li><a href="#">Teaching 2</a></li>
+  <li><a href="#">Teaching 3</a></li>
+  <li><a href="#">Teaching 4</a></li>
+  <li><a href="#">Teaching 5</a></li>
+  <li><a href="#">Teaching 6</a></li>
+
+</ul>
+</div>
+
+<button class="accordion">E-Book Listing</button>
+<div class="panel">
+
+<input type="text" id="myInputiBK" onkeyup="myFuncBK()" placeholder="Search for E-Book Title" title="Type in a book">
+<ul id="myULiBK">
+
+<li><a href="https://docs.google.com/document/d/e/2PACX-1vQc4EKZekyJ7YY2enXNkiVq8Bbo3OLbPksjEBjhHyn1iO0SZcDRNVkkVaDhhtDOv7EpZYi6awFuJ2Cf/pub?embedded=true" target="popup" onclick="window.open('https://docs.google.com/document/d/e/2PACX-1vQc4EKZekyJ7YY2enXNkiVq8Bbo3OLbPksjEBjhHyn1iO0SZcDRNVkkVaDhhtDOv7EpZYi6awFuJ2Cf/pub?embedded=true','binta1','width=600,height=400')">3 Things Successful People Do</a></li>
+<li><a href="https://docs.google.com/document/d/e/2PACX-1vQRs4VsgHZBGnTaJ_qhAH0Jk_xhsEUdGSoRdFTbhMnNtSyYWrtvesznHwVB9gKW2NLXOaFyeD76_cci/pub?embedded=true" target="popup" onclick="window.open('https://docs.google.com/document/d/e/2PACX-1vQRs4VsgHZBGnTaJ_qhAH0Jk_xhsEUdGSoRdFTbhMnNtSyYWrtvesznHwVB9gKW2NLXOaFyeD76_cci/pub?embedded=true','binta2','width=600,height=400')" >24 Jesus' Final Hours - John Maxwell</a></li>
+<li><a href="https://docs.google.com/document/d/e/2PACX-1vQRs4VsgHZBGnTaJ_qhAH0Jk_xhsEUdGSoRdFTbhMnNtSyYWrtvesznHwVB9gKW2NLXOaFyeD76_cci/pub?embedded=true" target="popup" onclick="window.open('https://docs.google.com/document/d/e/2PACX-1vQRs4VsgHZBGnTaJ_qhAH0Jk_xhsEUdGSoRdFTbhMnNtSyYWrtvesznHwVB9gKW2NLXOaFyeD76_cci/pub?embedded=true','binta3','width=600,height=400')" >24 Jesus' Final Hours - John Maxwell</a></li>
+<li><a href="https://docs.google.com/document/d/e/2PACX-1vTEn2Zd5aIT7UKEpayCWmuerG4Wpgnw2FOtU5O4lfeY0vuYcxb_2_EQM_C5LYYaInbcG_6b1ItjXloZ/pub?embedded=true" target="popup" onclick="window.open('https://docs.google.com/document/d/e/2PACX-1vTEn2Zd5aIT7UKEpayCWmuerG4Wpgnw2FOtU5O4lfeY0vuYcxb_2_EQM_C5LYYaInbcG_6b1ItjXloZ/pub?embedded=true','binta4','width=600,height=400')" >25 Ways to Win with People</a></li>
+<li><a href="https://docs.google.com/document/d/e/2PACX-1vQqNzXQTvI8_vNY2_eSp0MWXe9t6vXXS1ISAtRKdZ7MtMSJlzNSRHOcmb5P4l_93XShPCUh-xr2-6DF/pub?embedded=true" target="popup" onclick="window.open('https://docs.google.com/document/d/e/2PACX-1vQqNzXQTvI8_vNY2_eSp0MWXe9t6vXXS1ISAtRKdZ7MtMSJlzNSRHOcmb5P4l_93XShPCUh-xr2-6DF/pub?embedded=true','binta5','width=600,height=400')" >A Leader's Heart_ 365-Day Devotional Journal</a></li>
+<li><a href="https://docs.google.com/document/d/e/2PACX-1vSOZqXAa-p5aSzzV0HiyiyiqmYQKwrT8Sy1GTuuWNuvppP-WDYzcqG13I_3XreVrBl4BtrcHK8HCR0C/pub?embedded=true" target="popup" onclick="window.open('https://docs.google.com/document/d/e/2PACX-1vSOZqXAa-p5aSzzV0HiyiyiqmYQKwrT8Sy1GTuuWNuvppP-WDYzcqG13I_3XreVrBl4BtrcHK8HCR0C/pub?embedded=true','binta6','width=600,height=400')" >Attitude 101</a></li>
+<li><a href="https://docs.google.com/document/d/e/2PACX-1vT9D78TdCi637KbirIZEMZw1QrUeE3qWXDtTd5S4KIG8Q25D23mj9hEiA4eKUSS5oFAOigJOxVwq2Ut/pub?embedded=true" target="popup" onclick="window.open('https://docs.google.com/document/d/e/2PACX-1vT9D78TdCi637KbirIZEMZw1QrUeE3qWXDtTd5S4KIG8Q25D23mj9hEiA4eKUSS5oFAOigJOxVwq2Ut/pub?embedded=true','binta7','width=600,height=400')" >Be a People Person_ Effective Leadership Through Effective Relationships</a></li>
+<li><a href="https://docs.google.com/document/d/e/2PACX-1vSESelVAjQlZL4bbRQjQ001wG_6Ob0_o7-_cwDo7YbnbflZgVUujs92Spvb97CdPRffl9sA_tC0RjgC/pub?embedded=true" target="popup" onclick="window.open('https://docs.google.com/document/d/e/2PACX-1vSESelVAjQlZL4bbRQjQ001wG_6Ob0_o7-_cwDo7YbnbflZgVUujs92Spvb97CdPRffl9sA_tC0RjgC/pub?embedded=true','binta8','width=600,height=400')" >Be All You Can Be_ A Challenge to Stretch Your God-Given Potential</a></li>
+<li><a href="" target="popup" onclick="window.open('','binta9','width=600,height=400')" >Becoming a Person of Influence_ How to Positively Impact the Lives of Others</a></li>
+<li><a href="" target="popup" onclick="window.open('','binta0','width=600,height=400')" >Dare to dream, then do it what - John Maxwell</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintb1','width=600,height=400')" >Developing The Leader Within You 2.0 Workbook</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintb2','width=600,height=400')" >Developing the Leader Within You 2.0</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintb3','width=600,height=400')" >Developing the Leader Within You</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintb4','width=600,height=400')" >Developing the Leaders Around You</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintb5','width=600,height=400')" >Equipping 101_ What Every Leader Needs to Know</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintb6','width=600,height=400')" >Ethics 101</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintb7','width=600,height=400')" >Everyone Communicates, Few Connect</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintb8','width=600,height=400')" >Failing Forward_ How to Make the Most of Your Mistakes</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintb8','width=600,height=400')" >Good Leaders Ask Great Questions_ Your Foundation for Successful Leadership</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintb0','width=600,height=400')" >Home Run_ Learn God's Game Plan for Life and Leadership</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintc1','width=600,height=400')" >How High Will You Climb__ Determine Your Success by Cultivating the Right Attitude</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintc2','width=600,height=400')" >How Successful People Grow_ 15 Ways to Get Ahead in Life</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintc3','width=600,height=400')" >How Successful People Lead_ Taking Your Influence to the Next Level</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintc4','width=600,height=400')" >How Successful People Think_ Change Your Thinking, Change Your Life</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintc5','width=600,height=400')" >How to Influence People</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintc6','width=600,height=400')" >How To Lead When Your Boss Can't (or Won't) by John Maxwell</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintc7','width=600,height=400')" >Intentional Living_ Choosing a Life That Matters</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintc8','width=600,height=400')" >Jesus's Birth_ When Christ was born (The Jesus Diary Book 1) - John Maxwell</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintc9','width=600,height=400')" >John C. Maxwell's Quotes_ 450 Inspirational and Motivational Quotes by John C. Maxwell</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintc0','width=600,height=400')" >JumpStart Your Leadership_ A 90-Day Improvement Plan</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintd1','width=600,height=400')" >JumpStart Your Thinking_ A 90-Day Improvement Plan</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintd2','width=600,height=400')" >Leadershift</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintd3','width=600,height=400')" >Leadership 101_ What Every Leader Needs to Know</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintd4','width=600,height=400')" >Leadership Gold_ Lessons I've Learned from a Lifetime of Leading</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintd5','width=600,height=400')" >Leadership Promises for Every Day</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintd6','width=600,height=400')" >Learning from the Giants_ Life and Leadership Lessons from the Bible (Giants of the Bible)</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintd7','width=600,height=400')" >Make Today Count_ The Secret of Your Success Is Determined by Your Daily Agenda</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintd8','width=600,height=400')" >Mentoring 101</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintd9','width=600,height=400')" >Motivated to Succeed_ Inspirational Selections from John C. Maxwell</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintd0','width=600,height=400')" >No Limits</a></li>
+<li><a href="" target="popup" onclick="window.open('','binte1','width=600,height=400')" >Put Your Dream to the Test</a></li>
+<li><a href="" target="popup" onclick="window.open('','binte2','width=600,height=400')" >Relationships 101</a></li>
+<li><a href="" target="popup" onclick="window.open('','binte3','width=600,height=400')" >Running with the Giants</a></li>
+<li><a href="" target="popup" onclick="window.open('','binte4','width=600,height=400')" >Self-Improvement 101_ What Every Leader Needs to Know</a></li>
+<li><a href="" target="popup" onclick="window.open('','binte5','width=600,height=400')" >Sometimes You Win, Sometimes You Learn_ Life's Greatest Lessons Are Gained From Our Losses</a></li>
+<li><a href="" target="popup" onclick="window.open('','binte6','width=600,height=400')" >Success 101</a></li>
+<li><a href="" target="popup" onclick="window.open('','binte7','width=600,height=400')" >Talent Is Never Enough</a></li>
+<li><a href="" target="popup" onclick="window.open('','binte8','width=600,height=400')" >Teamwork 101_ What Every Leader Needs to Know</a></li>
+<li><a href="" target="popup" onclick="window.open('','binte9','width=600,height=400')" >The 5 Levels of Leadership_ Proven Steps to Maximize Your Potential</a></li>
+<li><a href="" target="popup" onclick="window.open('','binte0','width=600,height=400')" >The 15 Invaluable Laws of Growth_ Live Them and Reach Your Potential</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintf1','width=600,height=400')" >The 17 essential qualities of a Team Player - John Maxwell</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintf2','width=600,height=400')" >The 17 Indisputable Laws of Teamwork Workbook_ Embrace Them and Empower Your Team (2003)</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintf3','width=600,height=400')" >The 17 Indisputable Laws of Teamwork_ Embrace Them and Empower Your Team</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintf4','width=600,height=400')" >The 21 Indispensable Qualities - John Maxwell</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintf5','width=600,height=400')" >The 21 Irrefutable Laws of Leadership</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintf6','width=600,height=400')" >The 360ø Leader_ Developing Your Influence from Anywhere in the Organization</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintf7','width=600,height=400')" >The Choice is Yours</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintf8','width=600,height=400')" >The Complete 101 Collection_ Wh - John Maxwell</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintf9','width=600,height=400')" >The Difference Maker_ Making Your Attitude Your Greatest Asset</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintf0','width=600,height=400')" >The Jesus Diary_ The most comprehensive chronology of the events in the  life of Jesus Christ, the Son of God, ever written (The Jesus Diary - Second Edition Book 1)</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintg1','width=600,height=400')" >The Leaders Greatest Return Workbook -John C. Maxwell</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintg2','width=600,height=400')" >The Maxwell Daily Reader_ 365 Days of Insight to Develop the Leader Within You and Influence Those Around You</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintg3','width=600,height=400')" >The Maxwell Leadership Bible (3rd edition)</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintg4','width=600,height=400')" >The Maxwell Leadership Bible (revised and updated)</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintg5','width=600,height=400')" >The Power of Your Potential</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintg6','width=600,height=400')" >The Right to Lead</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintg7','width=600,height=400')" >There's No Such Thing As _Business_ Ethics</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintg8','width=600,height=400')" >Think On These Things</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintg9','width=600,height=400')" >Thinking for a Change_ 11 Ways Highly Successful People Approach Life andWork</a></li>
+<li><a href="" target="popup" onclick="window.open('','bintg0','width=600,height=400')" >Today Matters_ 12 Daily Practices to Guarantee Tomorrows Success (Maxwell, John C.)</a></li>
+<li><a href="" target="popup" onclick="window.open('','binth1','width=600,height=400')" >Winning With People_ Discover the People Principles That Work for You Every Time</a></li>
+<li><a href="" target="popup" onclick="window.open('','binth2','width=600,height=400')" >Wisdom from Women in the Bible_ Giants of the Faith Speak into Our Lives (Giants of the Bible)</a></li>
+
+</ul>
+</div>
+
+<hr>
+
+<button class="accordion">Reserve</button>
+<div class="panel">
+
+<input type="text" id="myInputi" onkeyup="myFunc()" placeholder="Search for names.." title="Type in a sample">
+<ul id="myULi">
+  <li><a href="#">Abraham</a></li>
+  <li><a href="#">Paul</a></li>
+  <li><a href="#">Peter</a></li>
+  <li><a href="#">David</a></li>
+  <li><a href="#">Matthew</a></li>
+  <li><a href="#">John</a></li>
+  <li><a href="#">Luke</a></li>
+</ul>
+
+</div>
+<hr>
+
+
+
+<script>
+
+function myFunction()
+{
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++)
+    {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1)
+        {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+function myFuncBK()
+{
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInputiBK");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myULiBK");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++)
+    {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1)
+        {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+function myFunc()
+{
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInputi");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myULi");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++)
+    {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1)
+        {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++)
+{
+  acc[i].addEventListener("click", function()
+  {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block")
+    {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+</script>
 </body>
 </html> 
 
