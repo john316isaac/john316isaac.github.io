@@ -6,7 +6,7 @@ body
     font-family: 'Arial';  
 }  
 .login{  
-        width: 382px;  
+        width: 450px;  
         overflow: hidden;  
         margin: auto;  
         margin: 20 0 0 450px;  
@@ -52,8 +52,4 @@ label{
 span{  
     color: white;  
     font-size: 17px;  
-}  
-a{  
-    float: right;  
-    background-color: grey;  
 }  
